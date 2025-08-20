@@ -41,9 +41,12 @@ else
 fi
 echo
 echo -e "\U1F477Generating random choice from scanned audio and video files..."
-num_files=${#files[*]} # Count how many elements.
-num_files=`expr $num_files - 1`;
-choice="${files[$((RANDOM%num_files))]}"
+num_files=${#files[@]} # Count how many elements.
+if [ "$num_files" -eq 0 ]; then
+    echo "No audio or video files found."
+    exit 1
+fi
+choice="${files[RANDOM % num_files]}"
 # Show controls for Alsaplayer
 #echo
 #echo -e "${CLI}Controls${NC} (case sensitive !)
