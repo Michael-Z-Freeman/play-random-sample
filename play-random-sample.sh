@@ -3,10 +3,10 @@ IFS=$'\n'
 count=0
 dir=$(pwd)
 cache=.play-random-cache-$(echo "$dir" | tr / -)
-# https://gist.github.com/vratiu/9780109 (Colour table)
-TITLE='\033[1;33m' # BLUE='\033[0;34m'
-CLI='\033[4;37m'
-NC='\033[0m'
+# Colour constants from https://gist.github.com/vratiu/9780109
+TITLE='\033[1;33m'  # Bold yellow
+CLI='\033[4;37m'    # Underlined white
+NC='\033[0m'        # Reset/No colour
 DIR=''
 FILE=''
 echo
