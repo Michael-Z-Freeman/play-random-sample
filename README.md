@@ -1,6 +1,6 @@
 # Integrated CLI DJ'ing Environment
 
-![play-radnom-sample screen shot](https://github.com/Michael-Z-Freeman/play-random-sample/raw/main/play_random_sample_screenshot.png "screen shot") 
+![play-random-sample screen shot](https://github.com/Michael-Z-Freeman/play-random-sample/raw/main/play_random_sample_screenshot.png "screen shot")
 
 Scan folder and sub-folders for all audio &amp; video, cache results, then play random selection.
 
